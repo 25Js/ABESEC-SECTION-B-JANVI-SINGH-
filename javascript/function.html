@@ -1,24 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JavaScript Function Example</title>
-</head>
-<body>
-   
-    <script>
-        function abes() {
-          document.write("java script function");
+    <style>
+        .div{
+            height: 500px;
+            width: 500px;
+            background-color: darkslateblue;
+            border: 5px solid black;
+            position: fixed;
+            top:50px;
+        left:500px;        }
+        /* button{
+            height: 100px;
+            width: 100px;;
         }
-        abes();
+        p{
+         height: 200px;
+         width:200px;
+         color : white;
+         position: relative;
+         bottom: 50px;
+        } */
+       
+      
+    </style>
+</head>
+<body id="body">
+   <!-- <div class="div">
+    <button onclick="printMessage()">Click Me</button>
+    <p id="p"></p> -->
+   </div>
+  <button onclick="red()">Red</button>
+  <button onclick="blue()">blue</button>
+  <button onclick="green()">green</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // function abes() {
+        //   document.write("java script function");
+        // }
+        // abes();
         
-        function add(a,b){
-            return a+b;        }
-        var d=add(5,6);
-        document .write(d);
-         function sub(f,g){
-            return f-g;        }
-        var s=add(15,6);
-        document .write(s);
+        // function add(a,b){
+        //     return a+b;        }
+        // var d=add(5,6);
+        // document .write(d);
+        //  function sub(f,g){
+        //     return f-g;        }
+        // var s=add(15,6);
+        // document .write(s);
+
+        function printMessage(){
+            document.getElementById("p").innerHTML = "HELLO USER";
+        }
+        function red(){
+            document.getElementById("body").style.backgroundColor="red";
+        }
+         function blue(){
+            document.getElementById("body").style.backgroundColor="blue";
+        }
+         function green(){
+            document.getElementById("body").style.backgroundColor="green";
+        }
 
     </script>
 </body>
