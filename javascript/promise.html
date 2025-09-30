@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- .them if true and .catch if reject -->
+     <script>
+    //    m1= promise(resolve,reject){
+
+    //     }
+    //     m1.them()
+    //     .catch()
+
+
+    const promise= new Promise((resolve,reject)=>{
+        const password="1234566666";
+        if(password.length>8){
+            resolve(" password length is  ok ");
+        
+        }
+        else{
+            reject("password length is not ok");
+        }
+    })
+    promise.then((message)=>{
+        comsole.log("sucess:" +message);
+    }).catch((message)=>{
+        console.log("error:"+message);
+    })
+
+       </script>
+        
+</body>
+</html>
