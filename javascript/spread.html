@@ -7,10 +7,61 @@
 </head>
 <body>
     <script>
-        const a1=[1,2,3];
-        const a2=[4,5,6];
-        const result=[...a1,...a2];
-        alert(result);
+        // const a1=[1,2,3];
+        // const a2=[4,5,6];
+        // const result=[...a1,...a2];
+        // alert(result);
+
+    // const college={
+    //     name:"abes",
+    //     city:"ghaziabad",
+    //     code: 32,
+
+
+    // }
+    // const student={
+    //     name:"janvi",
+    //    rolln0:96,
+    //    class:"cse ds"
+
+    // }
+    // const combin={...college,...student};
+    // document.write(combin);
+
+
+    const book1={
+        bookname:"tempest",
+        page: 700,
+        author:"shakespeare",
+    }
+    const book2={
+        bookname:"merchent of venice",
+        page: 754,
+        author:"shakespeare",
+    } 
+    const book3={
+        bookname:"strangers",
+        page: 654,
+        author:"rahul sharma",
+    }
+     const book4={
+        bookname:"thankyou for leaving",
+        page: 744,
+        author:"ritvik jain",
+    }
+     const book5={
+        bookname:"i dont know",
+        page: 554,
+        author:"durjoy dutta",
+    }
+
+    const library=[{...book1},{...book2},{...book3},{...book4},{...book5}];
+    document.write(JSON.stringify(library[2]));
+    document.write(JSON.stringify(library[3]));
+
+ 
+
+
     </script>
 </body>
 </html>
